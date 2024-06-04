@@ -17,7 +17,7 @@
         let formData = new FormData();
         formData.append("data", fileupload.files[0]);
 
-        await fetch('http://localhost:8080/photos', {
+        await fetch('https://photos-springboot.onrender.com/photos', {
             method: "POST",
             body: formData
         }).then(result =>    result.text())
